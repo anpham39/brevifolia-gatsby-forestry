@@ -1,4 +1,39 @@
 ---
 label: Fields
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: field_group_list
+  fields:
+  - name: first
+    type: text
+    config:
+      required: false
+    label: First
+  - name: select
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Select
+  - name: date
+    type: datetime
+    label: Date
+    description: ''
+    config:
+      required: false
+      date_format: 
+      time_format: 
+      display_utc: false
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Name
+  description: Name of item
